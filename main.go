@@ -15,7 +15,7 @@ type PayRequest struct {
 }
 
 func configure() {
-	stripe.Key = ""
+	stripe.Key = "sk_test"
 	stripe.SetBackend(stripe.APIBackend,
 		stripe.GetBackendWithConfig(stripe.APIBackend,
 			&stripe.BackendConfig{
